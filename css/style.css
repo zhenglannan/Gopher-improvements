@@ -1,0 +1,43 @@
+/*时间条背景*/
+#timer{
+    position: absolute;
+    top:310px;
+    left:5px;
+    z-index: 10; /*图层设置，值比较高*/
+    width:309px;
+    height: 50px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+#progress{      
+    position:absolute;
+    top:7px;
+    left:114px;
+    width:170px;
+    height:36px;
+    background-position:0px 0px;
+    background-repeat:repeat-x;
+    /*动画设置*/
+	/*
+    -webkit-animation-name:progress;
+    -webkit-animationon-timing-function:linear;/*线性渐变*/
+    /*-webkit-animation-duration:12.5s;
+    -webkit-animation-delay:0.5s;*/
+}
+
+#progress{
+    background-image: url(../img/gophers-Slice_time-line.png);
+	
+}
+#timer{
+    background-image:url(../img/gophers-Slice_Timeboard.png);
+}
+
+@-webkit-keyframes progress{
+    /*
+    照着12.5秒时间变长
+    */
+    0% {width:0px;}
+    100% {width:170px;}
+}
+
